@@ -178,6 +178,134 @@ window.PROPERTY_LISTINGS = [
             'Two render perspectives',
             'Three plan documents'
         ]
+    },
+    {
+        slug: 'windsor-professional-building',
+        title: 'Windsor Professional Building',
+        location: 'Windsor, Ontario',
+        category: 'Commercial / Office',
+        summary: 'A premium commercial office property offering modern workspace in Windsor\'s growing business corridor.',
+        heroImage: '../public/realstate2 (1).jpg',
+        gallery: ['../public/realstate2 (1).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Office' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Prime business district', 'Modern commercial zoning', 'Investment opportunity']
+    },
+    {
+        slug: 'essex-retail-plaza',
+        title: 'Essex County Retail Plaza',
+        location: 'Essex County, Ontario',
+        category: 'Retail / Power Centre',
+        summary: 'High-traffic retail plaza with strong anchor tenants and excellent visibility in Essex County.',
+        heroImage: '../public/realstate2 (2).jpg',
+        gallery: ['../public/realstate2 (2).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Essex County' },
+            { label: 'Asset Type', value: 'Retail Plaza' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['High visibility location', 'Strong tenant mix', 'Excellent traffic count']
+    },
+    {
+        slug: 'lauzon-commercial-strip',
+        title: 'Lauzon Commercial Strip',
+        location: 'Windsor, Ontario',
+        category: 'Retail / Power Centre',
+        summary: 'A strategic retail strip centre along Windsor\'s busy Lauzon Road corridor with multiple tenants.',
+        heroImage: '../public/realstate2 (3).jpg',
+        gallery: ['../public/realstate2 (3).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Strip Centre' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Lauzon Road frontage', 'Multi-tenant retail', 'Established trade area']
+    },
+    {
+        slug: 'heritage-townhome-complex',
+        title: 'Heritage Townhome Complex',
+        location: 'Windsor, Ontario',
+        category: 'Residential / Townhomes',
+        summary: 'Modern residential townhome development offering quality living in Windsor\'s established neighbourhoods.',
+        heroImage: '../public/realstate2 (4).jpg',
+        gallery: ['../public/realstate2 (4).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Townhomes' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Established neighbourhood', 'Modern construction', 'Strong rental demand']
+    },
+    {
+        slug: 'lakeview-residential',
+        title: 'Lakeview Residential Development',
+        location: 'Windsor, Ontario',
+        category: 'Residential / Townhomes',
+        summary: 'Upscale residential development with scenic views, offering premium townhome and condo opportunities.',
+        heroImage: '../public/realstate2 (5).jpg',
+        gallery: ['../public/realstate2 (5).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Residential' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Scenic views', 'Premium finishes', 'Growing residential demand']
+    },
+    {
+        slug: 'windsor-industrial-facility',
+        title: 'Windsor Industrial Facility',
+        location: 'Windsor, Ontario',
+        category: 'Commercial / Industrial',
+        summary: 'A large-scale industrial facility with flexible floor plans, ideal for manufacturing, warehousing, or distribution.',
+        heroImage: '../public/realstate2 (6).jpg',
+        gallery: ['../public/realstate2 (6).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Industrial' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Flexible floor plans', 'Loading dock access', 'Industrial zoning']
+    },
+    {
+        slug: 'proposed-mixed-use-development',
+        title: 'Proposed Mixed-Use Development',
+        location: 'Windsor, Ontario',
+        category: 'Future / Developments',
+        summary: 'An exciting mixed-use development proposal combining retail, office, and residential in a prime Windsor location.',
+        heroImage: '../public/realstate2 (7).jpg',
+        gallery: ['../public/realstate2 (7).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Mixed-Use' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Mixed-use concept', 'Prime development site', 'Future income potential']
+    },
+    {
+        slug: 'greenfield-development-site',
+        title: 'Greenfield Development Site',
+        location: 'Windsor, Ontario',
+        category: 'Future / Developments',
+        summary: 'A shovel-ready greenfield site with full municipal services and approved development concept.',
+        heroImage: '../public/realstate2 (8).jpg',
+        gallery: ['../public/realstate2 (8).jpg'],
+        documents: [],
+        stats: [
+            { label: 'Market', value: 'Windsor' },
+            { label: 'Asset Type', value: 'Land' },
+            { label: 'Document Set', value: '0 Files' }
+        ],
+        highlights: ['Shovel-ready site', 'Municipal services in place', 'Flexible zoning']
     }
 ];
 

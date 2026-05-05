@@ -10,20 +10,9 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        body {
-            padding-top: 120px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-top: 70px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="pt-16 md:pt-28">
     <!-- Header Include -->
     <div id="header-placeholder"></div>
 
@@ -39,7 +28,7 @@
     <div class="inner-hero" data-number="01">
         <div class="section-label">Division 01</div>
         <h1 class="inner-hero-title">Real <span class="accent">Estate</span></h1>
-        <p style="font-size:1.1rem; color: rgba(30,26,20,0.72); max-width:580px; line-height:1.8; margin-top:20px;">A
+        <p class="mt-5 max-w-xl text-lg leading-8 text-stone-700">A
             full-service commercial, industrial and residential real estate firm specializing in retail projects
             throughout Ontario. Development, leasing, and property management — all under one roof.</p>
     </div>
@@ -47,20 +36,42 @@
     <div class="divider"></div>
 
     <!-- Properties -->
-    <div class="section" style="padding-top: 72px;">
+    <div class="section pt-16 md:pt-20">
         <div class="reveal">
             <div class="section-label">Portfolio</div>
-            <h2 class="section-title">Our <span class="accent">Properties</span></h2>
-            <p class="section-sub">Click any property to open the gallery, documents and related listings view.</p>
+            <h2 class="section-title">Click Below to <span class="accent">View Our Properties</span></h2>
         </div>
-        <div id="property-grid" class="property-grid reveal" style="margin-top: 48px;"></div>
+
+        <!-- Category Filters -->
+        <div class="reveal mt-10 mb-12 flex flex-wrap justify-center gap-3">
+            <button
+                class="active cursor-pointer rounded-md border border-amber-500 bg-amber-500 px-2 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="all">All Properties</button>
+            <button
+                class="cursor-pointer rounded-md border border-amber-300 bg-amber-50 px-2 py-3 text-sm font-semibold uppercase tracking-wide text-stone-900 transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="Commercial / Office">Commercial Office Space</button>
+            <button
+                class="cursor-pointer rounded-md border border-amber-300 bg-amber-50 px-2 py-3 text-sm font-semibold uppercase tracking-wide text-stone-900 transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="Retail / Power Centre">Commercial Retail Space</button>
+            <button
+                class="cursor-pointer rounded-md border border-amber-300 bg-amber-50 px-2 py-3 text-sm font-semibold uppercase tracking-wide text-stone-900 transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="Residential / Townhomes">Residential Properties</button>
+            <button
+                class="cursor-pointer rounded-md border border-amber-300 bg-amber-50 px-2 py-3 text-sm font-semibold uppercase tracking-wide text-stone-900 transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="Commercial / Industrial">Industrial Properties</button>
+            <button
+                class="cursor-pointer rounded-md border border-amber-300 bg-amber-50 px-2 py-3 text-sm font-semibold uppercase tracking-wide text-stone-900 transition-colors duration-300 hover:border-amber-500 hover:bg-amber-100 hover:text-amber-700"
+                data-category="Future / Developments">Future Developments</button>
+        </div>
+
+        <div id="property-grid" class="property-grid reveal mt-12 grid grid-cols-1 gap-6 bg-transparent sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        </div>
     </div>
 
     <!-- Quote -->
-    <div class="about-strip" style="margin-top: 80px;">
-        <div class="about-inner" style="grid-template-columns: 1fr;">
-            <div class="about-quote reveal"
-                style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; text-align: center; padding: 0;">
+    <div class="about-strip mt-20">
+        <div class="about-inner grid-cols-1">
+            <div class="about-quote reveal mx-auto max-w-[800px] p-0 text-center text-[1.5rem]">
                 "Mikhail Holdings is a full-service commercial, industrial and residential real estate firm specializing
                 in retail projects throughout Ontario. We have what you are looking for — and if we don't, we can BUILD
                 it for you."
@@ -69,7 +80,7 @@
     </div>
 
     <div class="cta-section">
-        <div class="section-label" style="justify-content: center; margin-bottom: 16px;">Real Estate</div>
+        <div class="section-label mb-4 justify-center">Real Estate</div>
         <h2 class="section-title">Looking for <span class="accent">Space?</span></h2>
         <p class="section-sub">Contact us today to discuss your real estate needs — commercial, industrial or
             residential.</p>

@@ -14,20 +14,47 @@ function getPropertyPageHref(slug) {
     return window.location.pathname.includes('/pages/') ? `property.html?slug=${slug}` : `pages/property.html?slug=${slug}`;
 }
 
-function renderPropertyGrid(container, properties) {
-    container.innerHTML = properties.map(property => `
-        <a class="listing-card reveal" href="${getPropertyPageHref(property.slug)}">
-            <div class="listing-media listing-media-large" style="background-image: url('${resolveAssetUrl(property.heroImage)}');">
-                <img src="${resolveAssetUrl(property.heroImage)}" alt="${property.title}">
-                <div class="listing-badge">${property.category}</div>
+function renderPropertyGrid(container, properties, filter = 'all') {
+    let filteredProperties = properties;
+
+    if (filter !== 'all') {
+        filteredProperties = properties.filter(property => property.category === filter);
+    }
+
+    if (!filteredProperties.length) {
+        container.innerHTML = `
+            <div class="col-span-full rounded-2xl border border-amber-200 bg-amber-50 p-10 text-center shadow-lg">
+                <div class="text-xs font-bold uppercase tracking-widest text-amber-600">No Listings Found</div>
+                <h3 class="mt-3 text-3xl font-bold leading-tight text-stone-900">No property matches this category</h3>
+                <p class="mx-auto mt-3 max-w-2xl text-base leading-7 text-stone-600">Try selecting a different filter to view available commercial, industrial, retail, or residential listings.</p>
             </div>
-            <div class="listing-body">
-                <div class="listing-location">${property.location}</div>
-                <div class="listing-title">${property.title}</div>
-                <div class="listing-desc">${property.summary}</div>
-                <div class="listing-foot">
-                    <span>${property.documents.length} DOCUMENT${property.documents.length !== 1 ? 'S' : ''}</span>
-                    <span>OPEN</span>
+        `;
+
+        if (window.observeReveal) {
+            window.observeReveal();
+        }
+
+        return;
+    }
+
+    container.innerHTML = filteredProperties.map(property => `
+        <a class="reveal group flex flex-col overflow-hidden rounded-2xl shadow-md border border-stone-200 no-underline transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl" href="${getPropertyPageHref(property.slug)}">
+            <div class="relative overflow-hidden" style="aspect-ratio:4/3;">
+                <img class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110" src="${resolveAssetUrl(property.heroImage)}" alt="${property.title}" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>
+                <div class="absolute left-3 top-3 z-10 rounded bg-amber-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-white shadow">${property.category}</div>
+                <div class="absolute inset-x-0 bottom-0 p-4 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                    <p class="text-sm leading-snug text-white/90 line-clamp-2">${property.summary}</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-1 px-5 py-4 bg-white transition-colors duration-300 group-hover:bg-amber-50">
+                <div class="text-[11px] font-bold uppercase tracking-widest text-amber-600">${property.location}</div>
+                <div class="text-lg font-bold leading-snug text-stone-900 group-hover:text-amber-700 transition-colors duration-300">${property.title}</div>
+                <div class="mt-2 flex items-center justify-between border-t border-stone-100 pt-2.5 text-xs font-semibold uppercase tracking-wider">
+                    <span class="text-stone-400">${property.documents.length} Doc${property.documents.length !== 1 ? 's' : ''}</span>
+                    <span class="flex items-center gap-1 text-amber-600">View
+                        <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
                 </div>
             </div>
         </a>
@@ -193,6 +220,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const gridContainer = document.getElementById('property-grid-home') || document.getElementById('property-grid');
     if (gridContainer) {
         renderPropertyGrid(gridContainer, properties);
+
+        // Add filter functionality
+        const filterButtons = document.querySelectorAll('button[data-category]');
+        const activeClasses = ['bg-amber-500', 'text-white', 'border-amber-500', 'font-bold'];
+        const inactiveClasses = ['bg-amber-50', 'text-stone-900', 'border-amber-300', 'font-semibold'];
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', ...activeClasses);
+                    btn.classList.add(...inactiveClasses);
+                });
+
+                button.classList.add('active');
+                button.classList.remove(...inactiveClasses);
+                button.classList.add(...activeClasses);
+
+                // Re-render grid with filter
+                renderPropertyGrid(gridContainer, properties, category);
+            });
+        });
     }
 
     const detailContainer = document.getElementById('property-detail');
