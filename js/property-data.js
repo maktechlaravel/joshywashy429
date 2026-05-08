@@ -18,7 +18,8 @@ window.PROPERTY_LISTINGS = [
         summary: 'A premier multi-tenant commercial building with a full property info sheet and aerial overview for the North Central corridor.',
         heroImage: '../public/3003_N_Central.webp',
         documents: [
-            { label: 'Aerial Overview', href: '../public/3003_N_Central_Aerial_Overview.pdf' }
+            { label: 'Aerial Overview', href: '../public/3003_N_Central_Aerial_Overview.pdf' },
+            { label: 'Arizona Property Listing (LoopNet)', href: 'https://www.loopnet.com/Listing/3003-N-Central-Ave-Phoenix-AZ/15478759', type: 'Link', displayUrl: 'https://www.loopnet.com/Listing/3003-N-Central-Ave-Phoenix-AZ/15478759' }
         ],
         stats: [
             { label: 'Market', value: 'Phoenix' },
@@ -169,6 +170,13 @@ window.PROPERTY_LISTINGS = [
                     { src: '../public/Enterprise_Way_Townhomes_2.jpg', caption: 'Enterprise Way Townhomes — Side Perspective' }
                 ],
                 body: 'A modern multi-building residential townhome development in Windsor, Ontario. Supported by full architectural site plans including typical and corner unit layouts.'
+            },
+            {
+                label: 'Property Video',
+                layout: 'full',
+                images: [
+                    { src: '../public/Enterprise Way.mp4', caption: 'Enterprise Way Townhomes — Video Tour', mediaType: 'video' }
+                ]
             }
         ]
     },

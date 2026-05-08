@@ -60,8 +60,16 @@ function renderPropertyGrid(container, properties, filter = 'all') {
 
 // ── Sections renderer helpers ─────────────────────────────────────────────
 function renderFigure(img) {
+    const isVideo = img.mediaType === 'video' || /\.mp4($|\?)/i.test(img.src);
+    const mediaHtml = isVideo
+        ? `<video controls preload="metadata" playsinline>
+            <source src="${resolveAssetUrl(img.src)}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>`
+        : `<img src="${resolveAssetUrl(img.src)}" alt="${img.caption}" loading="lazy">`;
+
     return `<figure class="prop-figure">
-        <img src="${resolveAssetUrl(img.src)}" alt="${img.caption}" loading="lazy">
+        ${mediaHtml}
         <figcaption>${img.caption}</figcaption>
     </figure>`;
 }
@@ -191,9 +199,9 @@ function renderPropertyDetail(container, property, properties) {
                         <a class="doc-item" href="${resolveAssetUrl(doc.href)}" target="_blank" rel="noopener">
                             <span>
                                 <strong>${doc.label}</strong>
-                                <small>${doc.href.split('/').pop()}</small>
+                                <small>${doc.displayUrl || (doc.href.startsWith('http://') || doc.href.startsWith('https://') ? doc.href : doc.href.split('/').pop())}</small>
                             </span>
-                            <span>PDF</span>
+                            <span>${doc.type || (doc.href.startsWith('http://') || doc.href.startsWith('https://') ? 'Link' : 'PDF')}</span>
                         </a>`).join('')}
                 </div>
            </div>`
