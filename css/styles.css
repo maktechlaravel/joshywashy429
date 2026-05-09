@@ -1332,6 +1332,117 @@ footer {
     font-weight: 700;
 }
 
+/* Portfolio listing grid (GitHub Pages: no Tailwind CDN) */
+#property-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+    #property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    #property-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    #property-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+#property-grid .listing-title {
+    font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+}
+
+.portfolio-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2.75rem 1.5rem;
+    background: linear-gradient(180deg, rgba(255, 251, 243, 0.95), rgba(246, 241, 232, 0.92));
+    border: 1px solid rgba(200, 169, 110, 0.28);
+    border-radius: 22px;
+    box-shadow: 0 12px 32px rgba(90, 79, 62, 0.1);
+}
+
+.portfolio-empty-kicker {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-empty h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.portfolio-empty p {
+    margin: 1rem auto 0;
+    max-width: 36rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.inner-hero-lead {
+    margin-top: 1.35rem;
+    max-width: 36rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--muted);
+}
+
+.section-portfolio-top {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .section-portfolio-top {
+        padding-top: 5rem;
+    }
+}
+
+.property-filters-wrap {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.about-strip-spaced {
+    margin-top: 5rem;
+}
+
+.about-quote-strip {
+    grid-template-columns: 1fr;
+}
+
+.about-quote-centered {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.section-label-center {
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
 .listing-card {
     display: flex;
     flex-direction: column;
