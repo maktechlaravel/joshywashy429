@@ -48,6 +48,7 @@ function toggleMobile() {
 
     menu.classList.toggle('open');
     ham.classList.toggle('open');
+    document.body.classList.toggle('mobile-menu-open', menu.classList.contains('open'));
 }
 
 // ── SCROLL REVEAL ──
@@ -75,6 +76,29 @@ function observeReveal() {
 function bootUi() {
     bootScrollNav();
     observeReveal();
+
+    const menu = document.getElementById('mobileMenu');
+    const ham = document.getElementById('hamburger');
+
+    if (menu && ham && menu.dataset.bound !== 'true') {
+        menu.dataset.bound = 'true';
+
+        menu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('open');
+                ham.classList.remove('open');
+                document.body.classList.remove('mobile-menu-open');
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menu.classList.remove('open');
+                ham.classList.remove('open');
+                document.body.classList.remove('mobile-menu-open');
+            }
+        });
+    }
 }
 
 document.addEventListener('DOMContentLoaded', bootUi);
