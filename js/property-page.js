@@ -7,10 +7,38 @@ function getAssetBase() {
 }
 
 function resolveAssetUrl(path) {
-    if (path.startsWith('http://') || path.startsWith('https://')) {
+    if (typeof path !== 'string' || path.startsWith('http://') || path.startsWith('https://')) {
         return path;
     }
-    return getAssetBase() + path.replace(/^\.\.\//, '');
+    const raw = getAssetBase() + path.replace(/^\.\.\//, '');
+    // Drop empty segments so "../public/x" does not become "/../public/x" (breaks subfolder / GitHub Pages hosts)
+    const encodedPath = raw
+        .split('/')
+        .filter((segment) => segment.length > 0)
+        .map((segment) => {
+            if (segment === '.' || segment === '..') {
+                return segment;
+            }
+            return encodeURIComponent(segment);
+        })
+        .join('/');
+
+    try {
+        const base = typeof document !== 'undefined' ? document.baseURI || window.location.href : window.location.href;
+        return new URL(encodedPath, base).href;
+    } catch {
+        return encodedPath;
+    }
+}
+
+/** Shipped stock photo in /public when hero or gallery assets are missing or remote load fails */
+function listingImageFallbackSrc() {
+    return resolveAssetUrl('../public/realstate2-1.jpg');
+}
+
+function imgOnErrorFallback() {
+    const fallback = listingImageFallbackSrc();
+    return ` onerror='this.onerror=null;this.src=${JSON.stringify(fallback)};'`;
 }
 
 function getPropertyPageHref(slug) {
@@ -36,7 +64,7 @@ function renderPropertyGrid(container, properties, filter = 'all') {
         <a class="listing-card reveal" href="${getPropertyPageHref(property.slug)}">
             <div class="listing-media">
                 <span class="listing-badge">${property.category}</span>
-                <img src="${resolveAssetUrl(property.heroImage)}" alt="${property.title}" loading="lazy">
+                <img src="${resolveAssetUrl(property.heroImage)}" alt="${property.title}" loading="lazy"${imgOnErrorFallback()}>
             </div>
             <div class="listing-body">
                 <div class="listing-location">${property.location}</div>
@@ -63,7 +91,7 @@ function renderFigure(img) {
             <source src="${resolveAssetUrl(img.src)}" type="video/mp4">
             Your browser does not support the video tag.
         </video>`
-        : `<img src="${resolveAssetUrl(img.src)}" alt="${img.caption}" loading="lazy">`;
+        : `<img src="${resolveAssetUrl(img.src)}" alt="${img.caption}" loading="lazy"${imgOnErrorFallback()}>`;
 
     return `<figure class="prop-figure">
         ${mediaHtml}
@@ -165,7 +193,7 @@ function renderRelated(container, property, properties) {
 
     container.innerHTML = related.map(item => `
         <a class="related-card reveal" href="${getPropertyPageHref(item.slug)}">
-            <img src="${resolveAssetUrl(item.heroImage)}" alt="${item.title}" loading="lazy">
+            <img src="${resolveAssetUrl(item.heroImage)}" alt="${item.title}" loading="lazy"${imgOnErrorFallback()}>
             <div class="related-card-body">
                 <span class="related-kicker">${item.location}</span>
                 <strong>${item.title}</strong>
