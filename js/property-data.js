@@ -65,7 +65,7 @@ window.PROPERTY_LISTINGS = [
                 layout: 'duo',
                 images: [
                     { src: '../public/4450_Walker_Road_Plaza.jpg', caption: 'Mikhail Centre — 4450 Walker Road, Windsor' },
-                    { src: '../public/20210830_094543.jpg', caption: 'Retail Centre Exterior' }
+                    // { src: '../public/20210830_094543.jpg', caption: 'Retail Centre Exterior' }
                 ],
                 body: 'A major retail destination anchored by national tenants along Windsor\'s busiest retail corridor. The centre includes PetSmart, Sobeys, and a strong supporting tenant mix backed by comprehensive site plans and brochures.'
             },
