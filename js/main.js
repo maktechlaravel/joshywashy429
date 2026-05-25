@@ -52,24 +52,54 @@ function toggleMobile() {
 }
 
 // ── SCROLL REVEAL ──
-function observeReveal() {
-    const reveals = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver((entries) => {
-        entries.forEach((e, i) => {
-            if (e.isIntersecting) {
-                setTimeout(() => e.target.classList.add('visible'), i * 80);
-                obs.unobserve(e.target);
-            }
-        });
-    }, { threshold: 0.1 });
+let revealObserver = null;
 
-    reveals.forEach(r => {
-        if (r.dataset.revealBound === 'true') {
+function getRevealObserver() {
+    if (revealObserver) {
+        return revealObserver;
+    }
+
+    revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            const delay = entry.target.closest('#property-grid, .property-grid') ? 0 : index * 80;
+            setTimeout(() => entry.target.classList.add('visible'), delay);
+            revealObserver.unobserve(entry.target);
+        });
+    }, { threshold: 0, rootMargin: '0px 0px 80px 0px' });
+
+    return revealObserver;
+}
+
+function revealIfInView(element) {
+    const rect = element.getBoundingClientRect();
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    if (rect.top < viewHeight && rect.bottom > 0) {
+        element.classList.add('visible');
+        return true;
+    }
+
+    return false;
+}
+
+function observeReveal() {
+    const obs = getRevealObserver();
+
+    document.querySelectorAll('.reveal:not(.visible)').forEach((element) => {
+        if (revealIfInView(element)) {
             return;
         }
 
-        r.dataset.revealBound = 'true';
-        obs.observe(r);
+        if (element.dataset.revealBound === 'true') {
+            return;
+        }
+
+        element.dataset.revealBound = 'true';
+        obs.observe(element);
     });
 }
 
@@ -102,6 +132,10 @@ function bootUi() {
 }
 
 document.addEventListener('DOMContentLoaded', bootUi);
-document.addEventListener('site-components-loaded', bootUi);
+document.addEventListener('site-components-loaded', () => {
+    bootUi();
+    requestAnimationFrame(() => observeReveal());
+});
+window.addEventListener('load', () => observeReveal());
 
 window.observeReveal = observeReveal;

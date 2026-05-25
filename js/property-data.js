@@ -71,15 +71,10 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 label: 'Property Photography',
-                layout: 'grid',
+                layout: 'duo',
                 images: [
                     { src: '../public/20190607_072155_resized.jpg', caption: 'Tenant Exterior' },
-                    { src: '../public/20190712_091114_resized.jpg', caption: 'Retail Storefront' },
-                    { src: '../public/image001.png', caption: 'Site Overview' },
-                    { src: '../public/image002.png', caption: 'Property View' },
-                    { src: '../public/image003.png', caption: 'Property View' },
-                    { src: '../public/Image10.jpg', caption: 'Property View' },
-                    { src: '../public/Image15.jpg', caption: 'Property View' }
+                    { src: '../public/Image10.jpg', caption: 'Property View' }
                 ]
             }
         ]
