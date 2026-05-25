@@ -45,6 +45,18 @@ function getPropertyPageHref(slug) {
     return window.location.pathname.includes('/pages/') ? `property.html?slug=${slug}` : `pages/property.html?slug=${slug}`;
 }
 
+function scheduleRevealRefresh() {
+    if (!window.observeReveal) {
+        return;
+    }
+
+    window.observeReveal();
+
+    requestAnimationFrame(() => {
+        window.observeReveal();
+    });
+}
+
 // ── Grid renderer (realestate.html cards) ────────────────────────────────
 function renderPropertyGrid(container, properties, filter = 'all') {
     const filtered = filter === 'all' ? properties : properties.filter(p => p.category === filter);
@@ -56,7 +68,7 @@ function renderPropertyGrid(container, properties, filter = 'all') {
                 <h3>No property matches this category</h3>
                 <p>Try selecting a different filter to view available listings.</p>
             </div>`;
-        if (window.observeReveal) window.observeReveal();
+        scheduleRevealRefresh();
         return;
     }
 
@@ -80,7 +92,7 @@ function renderPropertyGrid(container, properties, filter = 'all') {
         </a>
     `).join('');
 
-    if (window.observeReveal) window.observeReveal();
+    scheduleRevealRefresh();
 }
 
 // ── Sections renderer helpers ─────────────────────────────────────────────
@@ -274,7 +286,7 @@ function renderPropertyDetail(container, property, properties) {
 
     renderRelated(container.querySelector('#property-related'), property, properties);
 
-    if (window.observeReveal) window.observeReveal();
+    scheduleRevealRefresh();
 }
 
 // ── Boot ──────────────────────────────────────────────────────────────────
@@ -301,5 +313,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailContainer = document.getElementById('property-detail');
     if (detailContainer) {
         renderPropertyDetail(detailContainer, property || properties[0], properties);
+    }
+});
+
+document.addEventListener('site-components-loaded', () => {
+    if (window.observeReveal) {
+        scheduleRevealRefresh();
+    }
+});
+
+window.addEventListener('load', () => {
+    if (window.observeReveal) {
+        scheduleRevealRefresh();
     }
 });
