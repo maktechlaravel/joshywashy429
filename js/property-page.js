@@ -57,6 +57,18 @@ function scheduleRevealRefresh() {
     });
 }
 
+function getListingContentLabel(property) {
+    const docCount = property.documents?.length || 0;
+    if (docCount > 0) {
+        return `${docCount} Doc${docCount !== 1 ? 's' : ''}`;
+    }
+    const hasGallery = property.sections?.some((section) => section.images?.length);
+    if (hasGallery) {
+        return 'Gallery & Details';
+    }
+    return 'View Details';
+}
+
 // ── Grid renderer (realestate.html cards) ────────────────────────────────
 function renderPropertyGrid(container, properties, filter = 'all') {
     const filtered = filter === 'all' ? properties : properties.filter(p => p.category === filter);
@@ -83,7 +95,7 @@ function renderPropertyGrid(container, properties, filter = 'all') {
                 <div class="listing-title">${property.title}</div>
                 <p class="listing-desc">${property.summary}</p>
                 <div class="listing-foot">
-                    <span>${property.documents.length} Doc${property.documents.length !== 1 ? 's' : ''}</span>
+                    <span>${getListingContentLabel(property)}</span>
                     <span>View
                         <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </span>
