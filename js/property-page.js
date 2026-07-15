@@ -33,7 +33,8 @@ function resolveAssetUrl(path) {
 
 /** Shipped stock photo in /public when hero or gallery assets are missing or remote load fails */
 function listingImageFallbackSrc() {
-    return resolveAssetUrl('../public/realstate2-1.jpg');
+    // Neutral plaza photo — avoid industrial/Huron Church building as fallback
+    return resolveAssetUrl('../public/4450_Walker_Road_Plaza.jpg');
 }
 
 function imgOnErrorFallback() {

@@ -80,6 +80,10 @@ window.PROPERTY_LISTINGS = [
         "heroImage": "../public/3003_N_Central.webp",
         "documents": [
             {
+                "label": "Offering Memorandum",
+                "href": "../public/3003_N_Central_Offering_Memorandum.pdf"
+            },
+            {
                 "label": "Aerial Overview",
                 "href": "../public/3003_N_Central_Aerial_Overview.pdf"
             },
@@ -101,7 +105,7 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "2 Files"
+                "value": "3 Files"
             }
         ],
         "highlights": [
@@ -129,10 +133,10 @@ window.PROPERTY_LISTINGS = [
     },
     {
         "slug": "mikhail-centre",
-        "title": "Mikhail Centre / 4450 Walker Road",
-        "location": "Windsor, Ontario",
+        "title": "Mikhail Centre",
+        "location": "4450 Walker Road, Windsor, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "A major retail destination anchored by national tenants and supported by brochures, site plans, signage and tenant imagery.",
+        "summary": "A major retail destination at 4450 Walker Road — formerly RioCan Centre — anchored by national tenants with brochures, site plans, and signage packages.",
         "heroImage": "../public/4450_Walker_Road_Plaza.jpg",
         "documents": [
             {
@@ -183,9 +187,13 @@ window.PROPERTY_LISTINGS = [
                     {
                         "src": "../public/4450_Walker_Road_Plaza.jpg",
                         "caption": "Mikhail Centre — 4450 Walker Road, Windsor"
+                    },
+                    {
+                        "src": "../public/Walker_Towne_Centre_1.jpg",
+                        "caption": "Walker corridor retail view"
                     }
                 ],
-                "body": "A major retail destination anchored by national tenants along Windsor's busiest retail corridor. The centre includes PetSmart, Sobeys, and a strong supporting tenant mix backed by comprehensive site plans and brochures."
+                "body": "A major retail destination anchored by national tenants along Windsor's Walker Road corridor, including Staples, Cineplex, Giant Tiger, Dollarama, and a strong supporting mix. Supported by comprehensive site plans and brochures."
             },
             {
                 "label": "Property Photography",
@@ -196,8 +204,8 @@ window.PROPERTY_LISTINGS = [
                         "caption": "Tenant Exterior"
                     },
                     {
-                        "src": "../public/Image10.jpg",
-                        "caption": "Property View"
+                        "src": "../public/Walker_Towne_Site_Plan_preview.jpg",
+                        "caption": "Site plan preview"
                     }
                 ]
             }
@@ -208,13 +216,9 @@ window.PROPERTY_LISTINGS = [
         "title": "Mikhail Plaza",
         "location": "2601 Lauzon Rd, Windsor, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with offering memorandum, Lauzon development plans, and June plaza design package.",
-        "heroImage": "../public/Jmax_Plaza_1.jpg",
+        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with Lauzon development plans and conceptual site design package.",
+        "heroImage": "../public/Image10.jpg",
         "documents": [
-            {
-                "label": "Offering Memorandum",
-                "href": "../public/J_Max_Plaza_2601_Lauzon_OM_2025.pdf"
-            },
             {
                 "label": "Lauzon Development Plans",
                 "href": "../public/docs/lauzon-development.pdf"
@@ -235,48 +239,39 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "3 Files"
+                "value": "2 Files"
             }
         ],
         "highlights": [
             "Lauzon Road multi-building plaza",
             "Development & design packages",
-            "Offering memorandum available"
+            "Concept drawings for plaza expansion"
         ],
         "sections": [
             {
-                "label": "Property Views",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "../public/Jmax_Plaza_1.jpg",
-                        "caption": "Mikhail Plaza — 2601 Lauzon Road, Windsor"
-                    },
-                    {
-                        "src": "../public/Jmax_Plaza_2.jpg",
-                        "caption": "Plaza Exterior View"
-                    },
-                    {
-                        "src": "../public/Jmax_Plaza_3.webp",
-                        "caption": "Plaza Overview"
-                    }
-                ],
-                "body": "A multi-building retail plaza along Windsor's busy Lauzon Road corridor. Full offering memorandum and development design packages available for qualified parties."
-            },
-            {
-                "label": "Development & Building Plans",
+                "label": "Plaza Concept",
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "../public/Mikhail_Plaza_june_design.jpg",
-                        "caption": "June Plaza Design — Conceptual Site Plan (multi-building)"
+                        "src": "../public/Image10.jpg",
+                        "caption": "Mikhail Plaza — Lauzon Road concept drawing"
                     },
+                    {
+                        "src": "../public/Mikhail_Plaza_june_design.jpg",
+                        "caption": "Conceptual site plan — multi-building plaza"
+                    }
+                ],
+                "body": "A multi-building retail plaza along Windsor's busy Lauzon Road corridor. Development and conceptual design packages are available for qualified parties."
+            },
+            {
+                "label": "Development Plans",
+                "layout": "full",
+                "images": [
                     {
                         "src": "../public/Mikhail_Plaza_lauzon_dev.jpg",
                         "caption": "Lauzon Development — Building Package"
                     }
-                ],
-                "body": "Additional building and site development documentation covering the broader plaza layout and Lauzon corridor expansion plans."
+                ]
             }
         ]
     },
@@ -343,7 +338,7 @@ window.PROPERTY_LISTINGS = [
         "title": "Enterprise Way Townhomes",
         "location": "Windsor, Ontario",
         "category": "Residential / Townhomes",
-        "summary": "A modern residential townhome concept supported by rendering views and three architectural site plan documents.",
+        "summary": "A modern residential townhome concept supported by rendering views and architectural site plan documents.",
         "heroImage": "../public/Enterprise_Way_Townhomes_1.jpg",
         "documents": [
             {
@@ -353,10 +348,6 @@ window.PROPERTY_LISTINGS = [
             {
                 "label": "Typical / Corner Units",
                 "href": "../public/Cluster A1 Typical and Corner Units.pdf"
-            },
-            {
-                "label": "Architectural Site Plan",
-                "href": "../public/SP1_1_Architectural_Site_Plan_V1.pdf"
             }
         ],
         "stats": [
@@ -370,13 +361,13 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "3 Files"
+                "value": "2 Files"
             }
         ],
         "highlights": [
             "Multi-building residential concept",
             "Two render perspectives",
-            "Three plan documents"
+            "2 plan documents"
         ],
         "sections": [
             {
@@ -408,503 +399,114 @@ window.PROPERTY_LISTINGS = [
         ]
     },
     {
-        "slug": "cibc-building-retail",
-        "title": "The CIBC Building",
-        "location": "100 Ouellette Avenue, Windsor, Ontario",
+        "slug": "sobeys-plaza-amherstburg",
+        "title": "Sobeys Plaza",
+        "location": "83 Sandwich Street, Amherstburg, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "A landmark 14-storey Class \"A\" tower in Windsor's city centre with 10,500 sq ft of lobby-level retail and 2,416 sq ft mezzanine, overlooking the Detroit River and Riverfront Park.",
-        "heroImage": "../public/CIBC_Building_main.jpg",
-        "documents": [],
+        "summary": "Sobeys-anchored retail plaza at 83 Sandwich Street, Amherstburg — architectural site plans, concept drawings, and full building addition set.",
+        "heroImage": "../public/Sobeys_Plaza_hero.jpg",
+        "documents": [
+            {
+                "label": "Architectural Site Plan (Sobeys)",
+                "href": "../public/SP1_1_Architectural_Site_Plan_V1.pdf"
+            },
+            {
+                "label": "Concept Site Plan",
+                "href": "../public/docs/83-sandwich-concept-site.pdf"
+            },
+            {
+                "label": "83 Sandwich Complete Building Set",
+                "href": "../public/docs/83-sandwich-sobeys-complete-set.pdf"
+            }
+        ],
         "stats": [
             {
-                "label": "Retail Space",
-                "value": "10,500 SF Lobby"
+                "label": "Market",
+                "value": "Amherstburg"
             },
             {
-                "label": "Mezzanine",
-                "value": "2,416 SF"
+                "label": "Asset Type",
+                "value": "Retail Plaza"
             },
             {
-                "label": "Building Class",
-                "value": "Class A — 14 Floors"
+                "label": "Documents",
+                "value": "3 Files"
             }
         ],
         "highlights": [
-            "14-storey Class A tower",
-            "Detroit River & skyline views",
-            "Two blocks from US tunnel",
-            "Adjacent to 5 km riverfront park"
+            "Sobeys-anchored plaza",
+            "83 Sandwich Street frontage",
+            "Full architectural package"
         ],
         "sections": [
             {
-                "label": "Building Overview",
-                "layout": "image-left",
-                "images": [
-                    {
-                        "src": "../public/CIBC_Building_main.jpg",
-                        "caption": "The CIBC Building — 100 Ouellette Avenue, Windsor"
-                    }
-                ],
-                "body": "Located in the heart of downtown Windsor with a beautiful view of Detroit and the Windsor-Detroit River side. A 14-storey Class \"A\" office building situated at the corner of Ouellette Avenue and Riverside Drive, overlooking Riverfront Park, the Detroit River, and the Detroit skyline. The structure includes one below-grade level, a penthouse, and a mezzanine between the ground and second floors.",
-                "bullets": [
-                    {
-                        "label": "Location Highlights",
-                        "items": [
-                            "Two blocks from U.S. tunnel crossing",
-                            "Walking distance to restaurants and shopping",
-                            "Adjacent to 5 km riverfront park system",
-                            "Highway 401 accessible via Ouellette Avenue"
-                        ]
-                    }
-                ]
-            },
-            {
-                "label": "Parking & Elevators",
-                "layout": "callout",
-                "callout": "Three Brand New Kone High-Speed Elevators — The Newest System in Canada"
-            },
-            {
-                "label": "Property Photography",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/01.jpg",
-                        "caption": "Lobby Level Interior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/02.jpg",
-                        "caption": "Interior View"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/04.jpg",
-                        "caption": "Office Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/05.jpg",
-                        "caption": "Interior Space"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/06.jpg",
-                        "caption": "Common Area"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/07.jpg",
-                        "caption": "Building Interior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/08.jpg",
-                        "caption": "Building Systems"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/09.jpg",
-                        "caption": "Building Details"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%201.jpg",
-                        "caption": "CIBC Building — Exterior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%202.jpg",
-                        "caption": "CIBC Building"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%203.jpg",
-                        "caption": "Building Exterior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/100-ouellette.jpg",
-                        "caption": "100 Ouellette Avenue — Street View"
-                    }
-                ]
-            },
-            {
-                "label": "Space Available at The CIBC Building",
+                "label": "Plaza Overview",
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/Space%20Available%201.jpg",
-                        "caption": "Available Retail Space — Lobby Level (10,500 SF)"
+                        "src": "../public/Sobeys_Plaza_hero.jpg",
+                        "caption": "Sobeys Plaza — Amherstburg"
                     },
                     {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/Space%20Available%202.jpg",
-                        "caption": "Available Mezzanine Space (2,416 SF)"
+                        "src": "../public/Sobeys_Plaza_siteplan.jpg",
+                        "caption": "Architectural site plan"
                     }
                 ],
-                "body": "10,500 sq ft of retail space available on the lobby level. 2,416 sq ft mezzanine level also available. The building features a JCI building automation control system, perimeter hot water radiant heat with individualized thermostats, card access security, and LED fluorescent lighting throughout.",
-                "bullets": [
-                    {
-                        "label": "Building Systems",
-                        "items": [
-                            "JCI building automation control system",
-                            "Perimeter hot water radiant heat",
-                            "Individualized thermostats",
-                            "Card access security system",
-                            "Low voltage LED lighting",
-                            "On-site parking with limited availability"
-                        ]
-                    }
-                ]
+                "body": "Retail plaza at 83 Sandwich Street in Amherstburg, anchored by Sobeys. Site plans and the complete building addition drawing set are available."
             }
         ]
     },
     {
-        "slug": "ouellette-commercial-retail",
-        "title": "Ouellette Commercial Center",
-        "location": "33 University Ave, Windsor, Ontario",
+        "slug": "walmart-plaza-amherstburg",
+        "title": "Wal-Mart Plaza",
+        "location": "400 Sandwich Street, Amherstburg, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "A four-storey professional building at Windsor's premier corner offering ground-floor retail adjacent to Starbucks and executive office suites from 1,000–15,000 sq ft at $10 NNN.",
-        "heroImage": "../public/Ouellette_Commercial_main.jpg",
+        "summary": "Wal-Mart Centre at 400 Sandwich Street, Amherstburg — centre brochure map and LCBO / Walmart site plan documentation.",
+        "heroImage": "../public/Walmart_Plaza_hero.jpg",
         "documents": [
             {
-                "label": "Floor Plans",
-                "href": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans.pdf"
+                "label": "WM Centre Amherstburg Brochure",
+                "href": "../public/docs/walmart-centre-amherstburg.pdf"
+            },
+            {
+                "label": "LCBO / Walmart Site Plan",
+                "href": "../public/docs/walmart-lcbo-site-plan.pdf"
             }
         ],
         "stats": [
             {
-                "label": "Available",
-                "value": "1,000–15,000 SF"
+                "label": "Market",
+                "value": "Amherstburg"
             },
             {
-                "label": "Rate",
-                "value": "$10.00/SF NNN"
+                "label": "Asset Type",
+                "value": "Power Centre"
             },
             {
-                "label": "Location",
-                "value": "Windsor's Premier Corner"
+                "label": "Documents",
+                "value": "2 Files"
             }
         ],
         "highlights": [
-            "Windsor's premier corner",
-            "Ground floor retail next to Starbucks",
-            "Entire floor leasing with naming rights"
+            "Wal-Mart Centre Amherstburg",
+            "400 Sandwich Street",
+            "LCBO / retail pad plans"
         ],
         "sections": [
             {
-                "label": "Building Overview",
-                "layout": "image-left",
-                "images": [
-                    {
-                        "src": "../public/Ouellette_Commercial_main.jpg",
-                        "caption": "Ouellette Commercial Center — 33 University Ave, Windsor"
-                    }
-                ],
-                "body": "A professional four-story office building positioned at Windsor's premier corner. The facility offers beautifully finished executive office spaces ranging from 1,000 to 15,000 square feet. Tenants can lease entire floors and display their names on the building's prominent façade. Ground floor retail space is available adjacent to Starbucks with parking provided.",
-                "stats": [
-                    {
-                        "label": "Available Space",
-                        "value": "1,000–15,000 SF"
-                    },
-                    {
-                        "label": "Lease Rate",
-                        "value": "$10.00/SF NNN"
-                    }
-                ]
-            },
-            {
-                "label": "Interior Views",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette1.jpg",
-                        "caption": "Executive Office Interior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette3.jpg",
-                        "caption": "Office Suite"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette4.jpg",
-                        "caption": "Interior View"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette5.jpg",
-                        "caption": "Office Space"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette6.jpg",
-                        "caption": "Building Interior"
-                    }
-                ]
-            },
-            {
-                "label": "Floor Plans",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0001.jpg",
-                        "caption": "Floor Plan — Ground Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0002.jpg",
-                        "caption": "Floor Plan — Second Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0003.jpg",
-                        "caption": "Floor Plan — Third Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0004.jpg",
-                        "caption": "Floor Plan — Fourth Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0005.jpg",
-                        "caption": "Floor Plan — Detail"
-                    }
-                ]
-            },
-            {
-                "label": "Location Map",
-                "layout": "full",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellettemap.jpg",
-                        "caption": "Location Map — 33 University Ave, Windsor, Ontario"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "slug": "cibc-building-office",
-        "title": "The CIBC Building — Office Space",
-        "location": "100 Ouellette Avenue, Windsor, Ontario",
-        "category": "Commercial / Office",
-        "summary": "Premium Class \"A\" office space in Windsor's iconic 14-storey CIBC Building — featuring new Kone elevators, JCI automation, panoramic windows, and Detroit River views.",
-        "heroImage": "../public/CIBC_Building_1.jpg",
-        "documents": [],
-        "stats": [
-            {
-                "label": "Building Class",
-                "value": "Class A Office"
-            },
-            {
-                "label": "Stories",
-                "value": "14 Floors"
-            },
-            {
-                "label": "Elevators",
-                "value": "3 New Kone"
-            }
-        ],
-        "highlights": [
-            "Three new Kone high-speed elevators",
-            "Detroit River & skyline views",
-            "JCI building automation",
-            "Card access security"
-        ],
-        "sections": [
-            {
-                "label": "Building Overview",
-                "layout": "image-left",
-                "images": [
-                    {
-                        "src": "../public/CIBC_Building_1.jpg",
-                        "caption": "The CIBC Building — Premium Class A Office Space, Windsor"
-                    }
-                ],
-                "body": "Premium Class \"A\" office space in Windsor's iconic 14-storey CIBC Building at Ouellette Avenue and Riverside Drive. Panoramic windows with Detroit River views, a mezzanine level, and a full basement. The newest Kone high-speed elevator system in Canada.",
-                "bullets": [
-                    {
-                        "label": "Building Systems",
-                        "items": [
-                            "Three brand new Kone high-speed elevators",
-                            "JCI building automation control system",
-                            "Perimeter hot water radiant heat",
-                            "Individualized thermostats",
-                            "Card access security system",
-                            "Low voltage LED fluorescent lighting"
-                        ]
-                    }
-                ]
-            },
-            {
-                "label": "Property Photography",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/01.jpg",
-                        "caption": "Lobby Level"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/02.jpg",
-                        "caption": "Interior View"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/04.jpg",
-                        "caption": "Office Floor"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/05.jpg",
-                        "caption": "Interior Space"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/06.jpg",
-                        "caption": "Common Area"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/07.jpg",
-                        "caption": "Office Interior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/08.jpg",
-                        "caption": "Building Detail"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/09.jpg",
-                        "caption": "Building Systems"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%201.jpg",
-                        "caption": "Exterior View"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%202.jpg",
-                        "caption": "CIBC Building"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/CIBC%203.jpg",
-                        "caption": "Building Exterior"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/100-ouellette.jpg",
-                        "caption": "100 Ouellette Ave — Street View"
-                    }
-                ]
-            },
-            {
-                "label": "Office Space Available",
+                "label": "Centre Overview",
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/Space%20Available%201.jpg",
-                        "caption": "Available Office Space"
+                        "src": "../public/Walmart_Plaza_hero.jpg",
+                        "caption": "Wal-Mart Centre — Amherstburg Ontario"
                     },
                     {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/CIBC%20Building/Space%20Available%202.jpg",
-                        "caption": "Space Layout"
+                        "src": "../public/Walmart_Plaza_siteplan.jpg",
+                        "caption": "Overall site plan — Walmart / LCBO"
                     }
                 ],
-                "body": "Premium office space available in the heart of Windsor's downtown. Two blocks from the U.S. tunnel crossing, walking distance to restaurants and shops, and adjacent to Windsor's 5 km riverfront park system."
-            }
-        ]
-    },
-    {
-        "slug": "ouellette-commercial-office",
-        "title": "Ouellette Commercial Center — Office",
-        "location": "33 University Ave, Windsor, Ontario",
-        "category": "Commercial / Office",
-        "summary": "Second and fourth floors available in this four-storey executive building at Windsor's premier corner. Tenants can lease full floors with building naming rights. Starting at $10/SF NNN.",
-        "heroImage": "../public/Ouellette_Commercial_main.jpg",
-        "documents": [
-            {
-                "label": "Floor Plans",
-                "href": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans.pdf"
-            }
-        ],
-        "stats": [
-            {
-                "label": "Floors Available",
-                "value": "2nd & 4th"
-            },
-            {
-                "label": "Available",
-                "value": "1,000–15,000 SF"
-            },
-            {
-                "label": "Rate",
-                "value": "$10.00/SF NNN"
-            }
-        ],
-        "highlights": [
-            "2nd and 4th floor suites",
-            "Full floor with naming rights",
-            "Executive finishes",
-            "On-site parking"
-        ],
-        "sections": [
-            {
-                "label": "Building Overview",
-                "layout": "image-left",
-                "images": [
-                    {
-                        "src": "../public/Ouellette_Commercial_main.jpg",
-                        "caption": "Ouellette Commercial Center — Office Space, 33 University Ave"
-                    }
-                ],
-                "body": "Second and fourth floors available in this professional four-story office building at Windsor's premier corner. Beautifully finished executive office spaces from 1,000 to 15,000 sq ft. Tenants may lease an entire floor with building naming rights. Starting at $10.00/SF NNN.",
-                "stats": [
-                    {
-                        "label": "Floors Available",
-                        "value": "2nd & 4th"
-                    },
-                    {
-                        "label": "Rate",
-                        "value": "$10.00/SF NNN"
-                    }
-                ]
-            },
-            {
-                "label": "Office Interiors",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette1.jpg",
-                        "caption": "Executive Office Suite"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette3.jpg",
-                        "caption": "Second Floor Office Space"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette4.jpg",
-                        "caption": "Interior View"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette5.jpg",
-                        "caption": "Office Suite"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellette6.jpg",
-                        "caption": "Building Interior"
-                    }
-                ]
-            },
-            {
-                "label": "Floor Plans — 2nd & 4th Floors",
-                "layout": "grid",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0001.jpg",
-                        "caption": "Floor Plan — Overview"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0002.jpg",
-                        "caption": "Second Floor Plan"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0003.jpg",
-                        "caption": "Third Floor Plan"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0004.jpg",
-                        "caption": "Fourth Floor Plan — Available"
-                    },
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans_page-0005.jpg",
-                        "caption": "Floor Plan Detail"
-                    }
-                ]
-            },
-            {
-                "label": "Location Map",
-                "layout": "full",
-                "images": [
-                    {
-                        "src": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/ouellettemap.jpg",
-                        "caption": "Location — 33 University Ave, Windsor, Ontario"
-                    }
-                ]
+                "body": "Power centre at 400 Sandwich Street in Amherstburg, anchored by Wal-Mart with supporting retail including LCBO. Centre brochure and architectural site plans included."
             }
         ]
     },
@@ -923,6 +525,14 @@ window.PROPERTY_LISTINGS = [
             {
                 "label": "34 Foster ST — Architectural Plans (Leslie)",
                 "href": "../public/docs/34-Foster-ST-leslie.pdf"
+            },
+            {
+                "label": "HGS Plan",
+                "href": "../public/docs/hgsplan.pdf"
+            },
+            {
+                "label": "HGS Plan 2",
+                "href": "../public/docs/hgsplan2.pdf"
             }
         ],
         "stats": [
@@ -936,7 +546,7 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "2 Files"
+                "value": "4 Files"
             }
         ],
         "highlights": [
@@ -979,16 +589,148 @@ window.PROPERTY_LISTINGS = [
                     {
                         "src": "../public/Harbourview_Foster_p4.jpg",
                         "caption": "Architectural Drawing — Sheet 4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "cibc-building",
+        "title": "The CIBC Building",
+        "location": "100 Ouellette Avenue, Windsor, Ontario",
+        "category": "Commercial / Office",
+        "summary": "Landmark 14-storey Class \"A\" tower in Windsor's city centre — lobby-level retail and premium office suites with river views, new Kone elevators, and JCI automation.",
+        "heroImage": "../public/CIBC_Building_main.jpg",
+        "documents": [],
+        "stats": [
+            {
+                "label": "Building Class",
+                "value": "Class A"
+            },
+            {
+                "label": "Stories",
+                "value": "14 Floors"
+            },
+            {
+                "label": "Retail Lobby",
+                "value": "10,500 SF"
+            }
+        ],
+        "highlights": [
+            "Retail lobby + office floors",
+            "Detroit River & skyline views",
+            "Three new Kone elevators"
+        ],
+        "sections": [
+            {
+                "label": "Building Overview",
+                "layout": "duo",
+                "images": [
+                    {
+                        "src": "../public/CIBC_Building_main.jpg",
+                        "caption": "The CIBC Building — 100 Ouellette Avenue, Windsor"
                     },
                     {
-                        "src": "../public/Harbourview_Foster_p5.jpg",
-                        "caption": "Architectural Drawing — Sheet 5"
+                        "src": "../public/CIBC_Building_1.jpg",
+                        "caption": "Riverfront setting — Detroit skyline views"
+                    }
+                ],
+                "body": "Located at Ouellette Avenue and Riverside Drive overlooking Riverfront Park and the Detroit River. A 14-storey Class \"A\" building with lobby-level retail, mezzanine, and premium office floors."
+            },
+            {
+                "label": "Property Photography",
+                "layout": "grid",
+                "images": [
+                    {
+                        "src": "../public/CIBC_Building_2.jpg",
+                        "caption": "CIBC Building exterior"
+                    },
+                    {
+                        "src": "../public/CIBC_Building_3.jpg",
+                        "caption": "Building exterior detail"
+                    },
+                    {
+                        "src": "../public/CIBC_100_Ouellette.jpg",
+                        "caption": "100 Ouellette Avenue"
+                    },
+                    {
+                        "src": "../public/CIBC_dl_CIBC_1.jpg",
+                        "caption": "Detroit River view from Windsor"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "ouellette-commercial-center",
+        "title": "Ouellette Commercial Center",
+        "location": "33 University Ave, Windsor, Ontario",
+        "category": "Commercial / Office",
+        "summary": "A four-storey professional building at Windsor's premier corner offering ground-floor retail and executive office suites from 1,000–15,000 sq ft at $10 NNN.",
+        "heroImage": "../public/Ouellette_src_ouellette1.jpg",
+        "documents": [
+            {
+                "label": "Floor Plans",
+                "href": "https://www.mikhailholdings.com/realestate.mikhailholdings.com/upl/fm/Commercial%20Retail%20Space/Ouellette%20Commercial%20Centre/floor%20plans.pdf"
+            }
+        ],
+        "stats": [
+            {
+                "label": "Available",
+                "value": "1,000–15,000 SF"
+            },
+            {
+                "label": "Rate",
+                "value": "$10.00/SF NNN"
+            },
+            {
+                "label": "Location",
+                "value": "Windsor's Premier Corner"
+            }
+        ],
+        "highlights": [
+            "Windsor's premier corner",
+            "Ground-floor retail available",
+            "Entire floor leasing with naming rights"
+        ],
+        "sections": [
+            {
+                "label": "Building Overview",
+                "layout": "duo",
+                "images": [
+                    {
+                        "src": "../public/Ouellette_src_ouellette1.jpg",
+                        "caption": "View from Ouellette Commercial Center — Windsor / Detroit"
+                    },
+                    {
+                        "src": "../public/Ouellette_src_ouellettemap.jpg",
+                        "caption": "Location map — 33 University Ave"
+                    }
+                ],
+                "body": "A professional four-storey building at Windsor's premier corner. Beautifully finished executive office spaces from 1,000 to 15,000 square feet, with ground-floor retail opportunity and parking provided. Tenants can lease entire floors with façade naming rights."
+            },
+            {
+                "label": "Interior Views",
+                "layout": "grid",
+                "images": [
+                    {
+                        "src": "../public/Ouellette_src_ouellette4.jpg",
+                        "caption": "Office suite"
+                    },
+                    {
+                        "src": "../public/Ouellette_src_ouellette5.jpg",
+                        "caption": "Interior workspace"
+                    },
+                    {
+                        "src": "../public/Ouellette_src_ouellette6.jpg",
+                        "caption": "Building interior"
                     }
                 ]
             }
         ]
     }
 ];
+
 
 
 window.PROPERTY_LISTINGS_BY_SLUG = window.PROPERTY_LISTINGS.reduce((lookup, property) => {
