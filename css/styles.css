@@ -1125,6 +1125,35 @@ footer {
 .footer-brand .nav-logo {
     margin-bottom: 20px;
     display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: none;
+}
+
+.logo-mark {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--gold);
+    border-radius: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.footer-brand .nav-logo span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
 }
 
 .footer-col {

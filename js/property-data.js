@@ -136,7 +136,7 @@ window.PROPERTY_LISTINGS = [
         "title": "Mikhail Centre",
         "location": "4450 Walker Road, Windsor, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "A major retail destination at 4450 Walker Road — formerly RioCan Centre — anchored by national tenants with brochures, site plans, and signage packages.",
+        "summary": "A major retail destination at 4450 Walker Road / Provincial Road — formerly RioCan Centre — anchored by national tenants with brochures, site plans, and Provincial Landmark pad documentation.",
         "heroImage": "../public/4450_Walker_Road_Plaza.jpg",
         "documents": [
             {
@@ -158,6 +158,10 @@ window.PROPERTY_LISTINGS = [
             {
                 "label": "Walker Road Site Plan",
                 "href": "../public/Mikhail_Centre_4450_Walker_Road_Site_Plan_1.pdf"
+            },
+            {
+                "label": "Provincial Landmark Plan",
+                "href": "../public/docs/provincial-landmark.pdf"
             }
         ],
         "stats": [
@@ -171,12 +175,12 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "5 Files"
+                "value": "6 Files"
             }
         ],
         "highlights": [
+            "Walker & Provincial corridor",
             "Anchored retail centre",
-            "Strong national tenant mix",
             "Full document package"
         ],
         "sections": [
@@ -190,24 +194,25 @@ window.PROPERTY_LISTINGS = [
                     },
                     {
                         "src": "../public/Walker_Towne_Centre_1.jpg",
-                        "caption": "Walker corridor retail view"
+                        "caption": "Walker Road retail corridor"
                     }
                 ],
                 "body": "A major retail destination anchored by national tenants along Windsor's Walker Road corridor, including Staples, Cineplex, Giant Tiger, Dollarama, and a strong supporting mix. Supported by comprehensive site plans and brochures."
             },
             {
-                "label": "Property Photography",
+                "label": "Walker / Provincial Context",
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "../public/20190607_072155_resized.jpg",
-                        "caption": "Tenant Exterior"
+                        "src": "../public/Provincial_Landmark_map.jpg",
+                        "caption": "Provincial Landmark — Walker Road & Provincial Road"
                     },
                     {
                         "src": "../public/Walker_Towne_Site_Plan_preview.jpg",
-                        "caption": "Site plan preview"
+                        "caption": "Walker Towne Centre site plan preview"
                     }
-                ]
+                ],
+                "body": "Site context at the Walker Road and Provincial Road intersection, including Provincial Landmark pad planning. Concept drawings for other plazas (including Lauzon) are not used here."
             }
         ]
     },
@@ -216,8 +221,8 @@ window.PROPERTY_LISTINGS = [
         "title": "Mikhail Plaza",
         "location": "2601 Lauzon Rd, Windsor, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with Lauzon development plans and conceptual site design package.",
-        "heroImage": "../public/Image10.jpg",
+        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with John Max and national tenants, plus Lauzon development and conceptual design packages.",
+        "heroImage": "../public/Jmax_Plaza_3.webp",
         "documents": [
             {
                 "label": "Lauzon Development Plans",
@@ -244,12 +249,27 @@ window.PROPERTY_LISTINGS = [
         ],
         "highlights": [
             "Lauzon Road multi-building plaza",
-            "Development & design packages",
-            "Concept drawings for plaza expansion"
+            "John Max Sports & Wings anchor",
+            "Development & design packages"
         ],
         "sections": [
             {
-                "label": "Plaza Concept",
+                "label": "Plaza Photography",
+                "layout": "duo",
+                "images": [
+                    {
+                        "src": "../public/Jmax_Plaza_3.webp",
+                        "caption": "John Max Sports & Wings — Mikhail Plaza, 2601 Lauzon Road"
+                    },
+                    {
+                        "src": "../public/Jmax_Plaza_1.jpg",
+                        "caption": "Plaza tenant storefront — Mikhail Plaza"
+                    }
+                ],
+                "body": "A multi-building retail plaza along Windsor's busy Lauzon Road corridor. Current tenant photography and development design packages are available for qualified parties."
+            },
+            {
+                "label": "Development Plans",
                 "layout": "duo",
                 "images": [
                     {
@@ -260,11 +280,10 @@ window.PROPERTY_LISTINGS = [
                         "src": "../public/Mikhail_Plaza_june_design.jpg",
                         "caption": "Conceptual site plan — multi-building plaza"
                     }
-                ],
-                "body": "A multi-building retail plaza along Windsor's busy Lauzon Road corridor. Development and conceptual design packages are available for qualified parties."
+                ]
             },
             {
-                "label": "Development Plans",
+                "label": "Lauzon Building Package",
                 "layout": "full",
                 "images": [
                     {
@@ -461,8 +480,8 @@ window.PROPERTY_LISTINGS = [
         "title": "Wal-Mart Plaza",
         "location": "400 Sandwich Street, Amherstburg, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Wal-Mart Centre at 400 Sandwich Street, Amherstburg — centre brochure map and LCBO / Walmart site plan documentation.",
-        "heroImage": "../public/Walmart_Plaza_hero.jpg",
+        "summary": "Wal-Mart Centre at 400 Sandwich Street, Amherstburg — anchored power centre with brochure map and LCBO / Walmart site plan documentation.",
+        "heroImage": "../public/Walmart_Plaza_storefront.jpg",
         "documents": [
             {
                 "label": "WM Centre Amherstburg Brochure",
@@ -498,15 +517,25 @@ window.PROPERTY_LISTINGS = [
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "../public/Walmart_Plaza_hero.jpg",
-                        "caption": "Wal-Mart Centre — Amherstburg Ontario"
+                        "src": "../public/Walmart_Plaza_storefront.jpg",
+                        "caption": "Wal-Mart Centre — Amherstburg (storefront)"
                     },
                     {
                         "src": "../public/Walmart_Plaza_siteplan.jpg",
                         "caption": "Overall site plan — Walmart / LCBO"
                     }
                 ],
-                "body": "Power centre at 400 Sandwich Street in Amherstburg, anchored by Wal-Mart with supporting retail including LCBO. Centre brochure and architectural site plans included."
+                "body": "Power centre at 400 Sandwich Street in Amherstburg, anchored by Wal-Mart with supporting retail including LCBO. Centre brochure and architectural site plans are included in the document package."
+            },
+            {
+                "label": "Site Documentation",
+                "layout": "full",
+                "images": [
+                    {
+                        "src": "../public/Walmart_Plaza_brochure_map.jpg",
+                        "caption": "WM Centre Amherstburg — brochure site map (document package)"
+                    }
+                ]
             }
         ]
     },
@@ -599,8 +628,8 @@ window.PROPERTY_LISTINGS = [
         "title": "The CIBC Building",
         "location": "100 Ouellette Avenue, Windsor, Ontario",
         "category": "Commercial / Office",
-        "summary": "Landmark 14-storey Class \"A\" tower in Windsor's city centre — lobby-level retail and premium office suites with river views, new Kone elevators, and JCI automation.",
-        "heroImage": "../public/CIBC_Building_main.jpg",
+        "summary": "Landmark 14-storey Class \"A\" tower at 100 Ouellette Avenue in Windsor's city centre — lobby-level retail and premium office suites with river views, new Kone elevators, and JCI automation.",
+        "heroImage": "../public/CIBC_Building_current.jpg",
         "documents": [],
         "stats": [
             {
@@ -627,35 +656,23 @@ window.PROPERTY_LISTINGS = [
                 "layout": "duo",
                 "images": [
                     {
-                        "src": "../public/CIBC_Building_main.jpg",
+                        "src": "../public/CIBC_Building_current.jpg",
                         "caption": "The CIBC Building — 100 Ouellette Avenue, Windsor"
                     },
                     {
-                        "src": "../public/CIBC_Building_1.jpg",
-                        "caption": "Riverfront setting — Detroit skyline views"
+                        "src": "../public/CIBC_Building_main.jpg",
+                        "caption": "Tower exterior from riverfront park"
                     }
                 ],
                 "body": "Located at Ouellette Avenue and Riverside Drive overlooking Riverfront Park and the Detroit River. A 14-storey Class \"A\" building with lobby-level retail, mezzanine, and premium office floors."
             },
             {
-                "label": "Property Photography",
-                "layout": "grid",
+                "label": "Location",
+                "layout": "full",
                 "images": [
                     {
-                        "src": "../public/CIBC_Building_2.jpg",
-                        "caption": "CIBC Building exterior"
-                    },
-                    {
-                        "src": "../public/CIBC_Building_3.jpg",
-                        "caption": "Building exterior detail"
-                    },
-                    {
                         "src": "../public/CIBC_100_Ouellette.jpg",
-                        "caption": "100 Ouellette Avenue"
-                    },
-                    {
-                        "src": "../public/CIBC_dl_CIBC_1.jpg",
-                        "caption": "Detroit River view from Windsor"
+                        "caption": "Location map — 100 Ouellette Avenue"
                     }
                 ]
             }
@@ -700,7 +717,7 @@ window.PROPERTY_LISTINGS = [
                 "images": [
                     {
                         "src": "../public/Ouellette_src_ouellette1.jpg",
-                        "caption": "View from Ouellette Commercial Center — Windsor / Detroit"
+                        "caption": "Views from Ouellette Commercial Center — Windsor / Detroit"
                     },
                     {
                         "src": "../public/Ouellette_src_ouellettemap.jpg",
@@ -710,26 +727,23 @@ window.PROPERTY_LISTINGS = [
                 "body": "A professional four-storey building at Windsor's premier corner. Beautifully finished executive office spaces from 1,000 to 15,000 square feet, with ground-floor retail opportunity and parking provided. Tenants can lease entire floors with façade naming rights."
             },
             {
-                "label": "Interior Views",
-                "layout": "grid",
+                "label": "Interior Suites",
+                "layout": "duo",
                 "images": [
                     {
-                        "src": "../public/Ouellette_src_ouellette4.jpg",
-                        "caption": "Office suite"
-                    },
-                    {
                         "src": "../public/Ouellette_src_ouellette5.jpg",
-                        "caption": "Interior workspace"
+                        "caption": "Office suite interior"
                     },
                     {
                         "src": "../public/Ouellette_src_ouellette6.jpg",
-                        "caption": "Building interior"
+                        "caption": "Flexible interior workspace"
                     }
                 ]
             }
         ]
     }
 ];
+
 
 
 
