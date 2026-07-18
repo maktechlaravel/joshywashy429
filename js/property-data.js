@@ -80,10 +80,6 @@ window.PROPERTY_LISTINGS = [
         "heroImage": "../public/3003_N_Central.webp",
         "documents": [
             {
-                "label": "Offering Memorandum",
-                "href": "../public/3003_N_Central_Offering_Memorandum.pdf"
-            },
-            {
                 "label": "Aerial Overview",
                 "href": "../public/3003_N_Central_Aerial_Overview.pdf"
             },
@@ -105,7 +101,7 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "3 Files"
+                "value": "2 Files"
             }
         ],
         "highlights": [
@@ -299,22 +295,9 @@ window.PROPERTY_LISTINGS = [
         "title": "Radius Center",
         "location": "2679 Howard Ave, Windsor, Ontario",
         "category": "Commercial / Industrial",
-        "summary": "A commercial site package with aerial planning, site coverage and document support for the Howard Avenue corridor.",
+        "summary": "A commercial site along Windsor's Howard Avenue corridor with aerial planning and site coverage views.",
         "heroImage": "../public/Radius_Center.png",
-        "documents": [
-            {
-                "label": "Snow / Operations Plan",
-                "href": "../public/LCBO_SP-1_corrected metric area_JAN 31-2024.pdf"
-            },
-            {
-                "label": "Architectural Sheet A-201-B1",
-                "href": "../public/A-201-B1.pdf"
-            },
-            {
-                "label": "Site Plan 0029",
-                "href": "../public/0029-SPA-07-26-20.pdf"
-            }
-        ],
+        "documents": [],
         "stats": [
             {
                 "label": "Market",
@@ -326,12 +309,12 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "3 Files"
+                "value": "—"
             }
         ],
         "highlights": [
             "Howard Avenue frontage",
-            "Full plan & operations docs",
+            "Aerial site overview",
             "Commercial site package"
         ],
         "sections": [
@@ -422,16 +405,12 @@ window.PROPERTY_LISTINGS = [
         "title": "Sobeys Plaza",
         "location": "83 Sandwich Street, Amherstburg, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Sobeys-anchored retail plaza at 83 Sandwich Street, Amherstburg — architectural site plans, concept drawings, and full building addition set.",
+        "summary": "Sobeys-anchored retail plaza at 83 Sandwich Street, Amherstburg — architectural site plans and full building addition set.",
         "heroImage": "../public/Sobeys_Plaza_hero.jpg",
         "documents": [
             {
                 "label": "Architectural Site Plan (Sobeys)",
                 "href": "../public/SP1_1_Architectural_Site_Plan_V1.pdf"
-            },
-            {
-                "label": "Concept Site Plan",
-                "href": "../public/docs/83-sandwich-concept-site.pdf"
             },
             {
                 "label": "83 Sandwich Complete Building Set",
@@ -449,7 +428,7 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "3 Files"
+                "value": "2 Files"
             }
         ],
         "highlights": [
@@ -480,12 +459,12 @@ window.PROPERTY_LISTINGS = [
         "title": "Wal-Mart Plaza",
         "location": "400 Sandwich Street, Amherstburg, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Wal-Mart Centre at 400 Sandwich Street, Amherstburg — anchored power centre with brochure map and LCBO / Walmart site plan documentation.",
+        "summary": "Wal-Mart Centre at 400 Sandwich Street, Amherstburg — updated 2026 site plan package with LCBO / Walmart documentation.",
         "heroImage": "../public/Walmart_Plaza_storefront.jpg",
         "documents": [
             {
-                "label": "WM Centre Amherstburg Brochure",
-                "href": "../public/docs/walmart-centre-amherstburg.pdf"
+                "label": "WM Centre Amherstburg — Updated Site Plan (2026)",
+                "href": "../public/docs/walmart-centre-amherstburg-updated-2026.pdf"
             },
             {
                 "label": "LCBO / Walmart Site Plan",
@@ -508,8 +487,8 @@ window.PROPERTY_LISTINGS = [
         ],
         "highlights": [
             "Wal-Mart Centre Amherstburg",
-            "400 Sandwich Street",
-            "LCBO / retail pad plans"
+            "Updated 2026 site plan",
+            "400 Sandwich Street"
         ],
         "sections": [
             {
@@ -521,19 +500,19 @@ window.PROPERTY_LISTINGS = [
                         "caption": "Wal-Mart Centre — Amherstburg (storefront)"
                     },
                     {
-                        "src": "../public/Walmart_Plaza_siteplan.jpg",
-                        "caption": "Overall site plan — Walmart / LCBO"
+                        "src": "../public/Walmart_Plaza_updated_2026.jpg",
+                        "caption": "Updated site plan — WM Centre Amherstburg (2026)"
                     }
                 ],
-                "body": "Power centre at 400 Sandwich Street in Amherstburg, anchored by Wal-Mart with supporting retail including LCBO. Centre brochure and architectural site plans are included in the document package."
+                "body": "Power centre at 400 Sandwich Street in Amherstburg, anchored by Wal-Mart with supporting retail including LCBO. The updated 2026 centre site plan is included in the document package."
             },
             {
-                "label": "Site Documentation",
+                "label": "Updated Site Plan",
                 "layout": "full",
                 "images": [
                     {
-                        "src": "../public/Walmart_Plaza_brochure_map.jpg",
-                        "caption": "WM Centre Amherstburg — brochure site map (document package)"
+                        "src": "../public/Walmart_Plaza_updated_2026.jpg",
+                        "caption": "See updated site plan for Walmart in Amherstburg"
                     }
                 ]
             }
@@ -743,6 +722,7 @@ window.PROPERTY_LISTINGS = [
         ]
     }
 ];
+
 
 
 
