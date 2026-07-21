@@ -196,19 +196,26 @@ window.PROPERTY_LISTINGS = [
                 "body": "A major retail destination anchored by national tenants along Windsor's Walker Road corridor, including Staples, Cineplex, Giant Tiger, Dollarama, and a strong supporting mix. Supported by comprehensive site plans and brochures."
             },
             {
-                "label": "Walker / Provincial Context",
-                "layout": "duo",
+                "label": "Brick Plaza Site Plan",
+                "layout": "full",
                 "images": [
                     {
                         "src": "../public/Provincial_Landmark_map.jpg",
-                        "caption": "Provincial Landmark — Walker Road & Provincial Road"
-                    },
-                    {
-                        "src": "../public/Walker_Towne_Site_Plan_preview.jpg",
-                        "caption": "Walker Towne Centre site plan preview"
+                        "caption": "Brick Plaza — Walker Road & Provincial Road site plan"
                     }
                 ],
-                "body": "Site context at the Walker Road and Provincial Road intersection, including Provincial Landmark pad planning. Concept drawings for other plazas (including Lauzon) are not used here."
+                "body": "Site context for the Brick Plaza property at the Walker Road and Provincial Road intersection."
+            },
+            {
+                "label": "Windsor Site Plan",
+                "layout": "full",
+                "images": [
+                    {
+                        "src": "../public/RioCan_Centre_Site_Plan_preview.jpg",
+                        "caption": "Mikhail Centre Windsor site plan — including Cineplex"
+                    }
+                ],
+                "body": "Windsor centre site plan showing Cineplex, The Brick, PetSmart, Giant Tiger, Staples, Costco, and the surrounding retail layout."
             }
         ]
     },
@@ -217,7 +224,7 @@ window.PROPERTY_LISTINGS = [
         "title": "Mikhail Plaza",
         "location": "2601 Lauzon Rd, Windsor, Ontario",
         "category": "Retail / Power Centre",
-        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with John Max and national tenants, plus Lauzon development and conceptual design packages.",
+        "summary": "Mikhail Plaza at 2601 Lauzon Road, Windsor — multi-building retail plaza with John Max and national tenants, plus Enterprise and Brick Plaza planning packages.",
         "heroImage": "../public/Jmax_Plaza_3.webp",
         "documents": [
             {
@@ -227,6 +234,14 @@ window.PROPERTY_LISTINGS = [
             {
                 "label": "June Plaza Design — Conceptual Site Plan",
                 "href": "../public/docs/june-plaza-design.pdf"
+            },
+            {
+                "label": "Enterprise Plaza Development Package",
+                "href": "../public/docs/enterprise-plaza-development-package.pdf"
+            },
+            {
+                "label": "The Brick Plaza — Aerial Memorandum",
+                "href": "../public/docs/brick-plaza-aerial-memorandum.pdf"
             }
         ],
         "stats": [
@@ -240,13 +255,13 @@ window.PROPERTY_LISTINGS = [
             },
             {
                 "label": "Documents",
-                "value": "2 Files"
+                "value": "4 Files"
             }
         ],
         "highlights": [
             "Lauzon Road multi-building plaza",
             "John Max Sports & Wings anchor",
-            "Development & design packages"
+            "Enterprise & Brick Plaza planning packages"
         ],
         "sections": [
             {
@@ -287,6 +302,40 @@ window.PROPERTY_LISTINGS = [
                         "caption": "Lauzon Development — Building Package"
                     }
                 ]
+            },
+            {
+                "label": "Enterprise Plaza Development",
+                "layout": "duo",
+                "images": [
+                    {
+                        "src": "../public/Mikhail_Plaza_enterprise_site_plan.jpg",
+                        "caption": "Enterprise Plaza — conceptual site plan"
+                    },
+                    {
+                        "src": "../public/Mikhail_Plaza_proposed_site_plan.jpg",
+                        "caption": "The Brick Plaza — proposed retail site plan"
+                    }
+                ],
+                "body": "Commercial expansion planning for the Enterprise Way and Lauzon Parkway area, including proposed phase-one and phase-two buildings, parking, access, and future retail space."
+            },
+            {
+                "label": "The Brick Plaza — Location & Access",
+                "layout": "grid",
+                "images": [
+                    {
+                        "src": "../public/Mikhail_Plaza_location_access.jpg",
+                        "caption": "The Brick Plaza — location and six-point access overview"
+                    },
+                    {
+                        "src": "../public/Mikhail_Plaza_aerial_context.jpg",
+                        "caption": "Lauzon Parkway, Enterprise Way, and surrounding retail context"
+                    },
+                    {
+                        "src": "../public/Mikhail_Plaza_brick_aerial_memo.jpg",
+                        "caption": "The Brick Plaza — offering memorandum aerial"
+                    }
+                ],
+                "body": "The Brick Plaza is positioned at Lauzon Parkway and Enterprise Way, near Tecumseh Road East and Windsor's major east-end retail node."
             }
         ]
     },
